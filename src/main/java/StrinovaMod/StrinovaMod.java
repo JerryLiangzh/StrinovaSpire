@@ -1,5 +1,8 @@
+package StrinovaMod;
+
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 
+import StrinovaMod.cards.XingHui.BeiJiXing;
 import basemod.BaseMod;
 import basemod.interfaces.EditCardsSubscriber;
 
@@ -19,5 +22,16 @@ public class StrinovaMod implements EditCardsSubscriber {
     @Override
     public void receiveEditCards() {
         // 这里写添加你卡牌的代码
+        BaseMod.addCard(new BeiJiXing());
+    }
+
+    public static String assetPath(String string) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'assetPath'");
+    }
+
+    public static String makeID(String string) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'makeID'");
     }
 }
