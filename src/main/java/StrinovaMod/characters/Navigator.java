@@ -31,30 +31,30 @@ import basemod.abstracts.CustomPlayer;
 public class Navigator extends CustomPlayer {
     public static final CharacterStrings characterStrings = CardCrawlGame.languagePack.getCharacterString(StrinovaMod.makeID("Navigator"));
     // 火堆的人物立绘（行动前）
-    private static final String MY_CHARACTER_SHOULDER_1 = "/images/characters/shoulder1.png";
+    private static final String MY_CHARACTER_SHOULDER_1 = "StrinovaMod/images/characters/shoulder1.png";
     // 火堆的人物立绘（行动后）
-    private static final String MY_CHARACTER_SHOULDER_2 = "/images/characters/shoulder2.png";
+    private static final String MY_CHARACTER_SHOULDER_2 = "StrinovaMod/images/characters/shoulder2.png";
     // 人物死亡图像
-    private static final String CORPSE_IMAGE = "/images/characters/corpse.png";
+    private static final String CORPSE_IMAGE = "StrinovaMod/images/characters/corpse.png";
     // 战斗界面左下角能量图标的每个图层
     private static final String[] ORB_TEXTURES = new String[]{
-            "/images/UI/orb/layer5.png",
-            "/images/UI/orb/layer4.png",
-            "/images/UI/orb/layer3.png",
-            "/images/UI/orb/layer2.png",
-            "/images/UI/orb/layer1.png",
-            "/images/UI/orb/layer6.png",
-            "/images/UI/orb/layer5d.png",
-            "/images/UI/orb/layer4d.png",
-            "/images/UI/orb/layer3d.png",
-            "/images/UI/orb/layer2d.png",
-            "/images/UI/orb/layer1d.png"
+            "StrinovaMod/images/UI/orb/layer5.png",
+            "StrinovaMod/images/UI/orb/layer4.png",
+            "StrinovaMod/images/UI/orb/layer3.png",
+            "StrinovaMod/images/UI/orb/layer2.png",
+            "StrinovaMod/images/UI/orb/layer1.png",
+            "StrinovaMod/images/UI/orb/layer6.png",
+            "StrinovaMod/images/UI/orb/layer5d.png",
+            "StrinovaMod/images/UI/orb/layer4d.png",
+            "StrinovaMod/images/UI/orb/layer3d.png",
+            "StrinovaMod/images/UI/orb/layer2d.png",
+            "StrinovaMod/images/UI/orb/layer1d.png"
     };
     // 每个图层的旋转速度
     private static final float[] LAYER_SPEED = new float[]{-40.0F, -32.0F, 20.0F, -20.0F, 0.0F, -10.0F, -8.0F, 5.0F, -5.0F, 0.0F};
 
     public Navigator(String name, PlayerClass setClass) {
-        super(name, setClass, ORB_TEXTURES, "/images/UI/orb/vfx.png", LAYER_SPEED, null, null);
+        super(name, setClass, ORB_TEXTURES, "StrinovaMod/images/UI/orb/vfx.png", LAYER_SPEED, null, null);
 
 
         // 人物对话气泡的大小，如果游戏中尺寸不对在这里修改（libgdx的坐标轴左下为原点）
@@ -64,7 +64,7 @@ public class Navigator extends CustomPlayer {
 
         // 初始化你的人物，如果你的人物只有一张图，那么第一个参数填写你人物图片的路径。
         this.initializeClass(
-                "/images/characters/Navigator.png", // 人物图片
+                "StrinovaMod/images/characters/Navigator.png", // 人物图片
                 MY_CHARACTER_SHOULDER_2, MY_CHARACTER_SHOULDER_1,
                 CORPSE_IMAGE, // 人物死亡图像
                 this.getLoadout(),
