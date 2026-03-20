@@ -21,7 +21,6 @@ public class BeiJiXing extends CustomCard {
     private static final CardTarget TARGET = CardTarget.ENEMY;
 
     public BeiJiXing() {
-        // 为了命名规范修改了变量名。这些参数具体的作用见下方
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.damage = this.baseDamage = 6;
         this.tags.add(CardTags.STARTER_STRIKE);
@@ -31,8 +30,8 @@ public class BeiJiXing extends CustomCard {
     @Override
     public void upgrade() {
         if (!this.upgraded) {
-            this.upgradeName(); // 卡牌名字变为绿色并添加“+”，且标为升级过的卡牌，之后不能再升级。
-            this.upgradeDamage(3); // 升级后伤害增加3点
+            this.upgradeName();
+            this.upgradeDamage(3);
             this.rawDescription = "造成 !D! 点伤害。";
             this.initializeDescription();
         }
